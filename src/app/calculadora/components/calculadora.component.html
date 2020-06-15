@@ -1,1 +1,105 @@
-<p>calculadora works!</p>
+
+<div class="col-md-4 col-md-offset-4 jumbotron">
+    <div class="row">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="form-group">
+                    <button (click)="limpar()" class="btn btn-block btn-danger">C</button>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="form-group">
+                    <input type="text" class="form-control text-right" id="display" [value]="display" readonly>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="form-group">
+                    <button id="btn7" (click)="adicionarNumero('7')" class="btn btn-block">7</button>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <button id="btn8" (click)="adicionarNumero('8')" class="btn btn-block">8</button>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <button id="btn9" (click)="adicionarNumero('9')" class="btn btn-block">9</button>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <button id="btnDivisao" (click)="definirOperacao('/')" class="btn btn-block btn-warning">/</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="form-group">
+                    <button id="btn4" (click)="adicionarNumero('4')" class="btn btn-block">4</button>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <button id="btn5" (click)="adicionarNumero('5')" class="btn btn-block">5</button>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <button id="btn6" (click)="adicionarNumero('6')" class="btn btn-block">6</button>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <button id="btnMultiplicacao" (click)="definirOperacao('*')" class="btn btn-block btn-warning">*</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="form-group">
+                    <button id="btn1" (click)="adicionarNumero('1')" class="btn btn-block">1</button>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <button id="btn2" (click)="adicionarNumero('2')" class="btn btn-block">2</button>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <button id="btn3" (click)="adicionarNumero('3')" class="btn btn-block">3</button>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <button id="btnSubtracao" (click)="definirOperacao('-')" class="btn btn-block btn-warning">-</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="form-group">
+                    <button id="btn0" (click)="adicionarNumero('0')" class="btn btn-block">0</button>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <button id="btnDecimal" (click)="adicionarNumero('.')" class="btn btn-block">.</button>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <button id="btnCalcular" (click)="calcular()" class="btn btn-block btn-success">=</button>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <button id="btnSoma" (click)="definirOperacao('+')" class="btn btn-block btn-warning">+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
